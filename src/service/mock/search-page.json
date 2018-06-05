@@ -1,0 +1,64 @@
+{
+  "returnCode": "1000",
+  "message": "message.common.success",
+  "pageSize": "10",
+  "pageNumber": "1",
+  "totalRecord": "1",
+  "totalPages": "1",
+  "pageData": [{
+    "marketPrice": "100",
+    "rebates": "0",
+    "appCategoryName": "曲面电视",
+    "sellPrice": "100",
+    "shopCoverImage": "http://dev.vpclub.cn/group1/M00/00/9E/rBAFJFoU-BWAMctwAAGwXD24anc109.jpg",
+    "type": "GOODTYPE_MASTER",
+    "sales": "0",
+    "merchantName": "中移香港",
+    "onShelfStatus": "2",
+    "merchantId": "918720751226753026",
+    "freightId": "-1",
+    "appId": "10000188",
+    "coverImage": "http://dev.vpclub.cn/group1/M00/00/9B/rBAC6loVd7GAPizZAAGwXD24anc178.jpg",
+    "virtualSales": "0",
+    "createdTime": "1511356517824",
+    "id": "933322998566301697",
+    "stock": "21212",
+    "firstAppCategoryId": "918728063566073857",
+    "approvalStatus": "3",
+    "sellNumber": "0",
+    "image": "[{\"url\":\"http://dev.vpclub.cn/group1/M00/00/9B/rBAC6loVd7eAZGzbAAGwXD24anc306.jpg\",\"links\":\"\",\"id\":0}]",
+    "updatedTime": "1511356685692",
+    "brandName": "安踏",
+    "snapshotId": "933323706480930818",
+    "updatedBy": "918724378318245889",
+    "productId": "933322998566301697",
+    "firstAppCategoryName": "家用电器",
+    "virtualViews": "0",
+    "isFootage": "1",
+    "onShelfTime": "1511961225000",
+    "secondAppCategoryId": "918728063566073858",
+    "deleted": "1",
+    "skusDescription": "CQRS测试1122-01CQRS测试1122-01",
+    "createdBy": "918724378318245889",
+    "brandId": "918731592109576192",
+    "name": "CQRS测试1122-01",
+    "secondAppCategoryName": "电视",
+    "comment": "CQRS测试1122-01CQRS测试1122-01CQRS测试1122-01",
+    "appCategoryId": "918728063566073859"
+  }],
+  "filterList": [{
+    "key": "品牌",
+    "value": "brand",
+    "sonList": [{
+      "value": "918731592109576192",
+      "key": "安踏"
+    }]
+  }, {
+    "key": "供应商",
+    "value": "merchant",
+    "sonList": [{
+      "value": "918720751226753026",
+      "key": "中移香港"
+    }]
+  }]
+}

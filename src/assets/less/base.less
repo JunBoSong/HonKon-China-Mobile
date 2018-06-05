@@ -1,0 +1,107 @@
+@import './theme.less';
+
+img[lazy=loading] {
+    background: url("../images/default/loading.gif") center center no-repeat;
+    background-size: 20px;
+}
+img[lazy=error] {
+    background: url("../images/default/error.png") center center no-repeat;
+    background-size: 1rem auto;
+}
+.clearfix:after {
+    content:""; 
+    display: block; 
+    clear:both; 
+ }
+ 
+.border-b {
+    border-bottom: 0.01rem solid @border-color;
+}
+.html-content{
+    padding: 0.2rem @page-space;
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+.popup1 {
+    height: 100%;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #D8D8D8;
+}
+
+.child-vertical-middle {
+    &:after {
+        display: inline-block;
+        content: '';
+        height: 100%;
+        width: 0;
+        vertical-align: middle;
+    }
+}
+
+//add by tp
+.row-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//两行文字省略号
+.row-2-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+//提示
+.tips {
+    margin-top: 0.2rem;
+    padding-left: 0.3rem;
+    color: #888;
+    font-size: 0.22rem;
+    background: url('~@/assets/images/all_notice@2x.png') 0 0.04rem no-repeat;
+    background-size: 0.22rem;
+  }
+
+//上台服务section头部公共样式
+.panel-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0.72rem;
+    padding-left: @page-space;
+    background: #fff;
+    overflow: hidden;
+    &::after {
+        content: " ";
+        position: absolute;
+        left: @page-space;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        border-bottom: 1px solid #C7C7C7;
+        color: #C7C7C7;
+        transform-origin: 0 100%;
+        transform: scaleY(0.5);
+    }
+    &.border-none::after{
+        border-bottom: none;
+    }
+    img{
+        height: 0.36rem;
+        width: 0.36rem;
+    }
+    span{
+        font-size: 0.28rem;
+        color: #333;
+        margin-left: 0.06rem;
+    }
+}

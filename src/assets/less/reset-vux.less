@@ -1,0 +1,165 @@
+@import './theme.less';
+
+.weui-icon-success{//重写check-icon 的选种颜色 和大小
+    color: @theme-handle 100%;
+    font-size: 15px;
+}
+.weui-wepay-flow__state{
+    background-color: #DEDEDE;
+    .weui-wepay-flow__li_done &{
+      background-color: @theme-handle !important;
+    }
+}
+
+.weui-wepay-flow__line{
+  background-color: #DEDEDE !important;
+  height: 1px !important;
+}
+.weui-wepay-flow__process{
+    background-color: @theme-handle !important;
+}
+.vux-popup-dialog {
+    background: #fff !important;
+}
+// 重置flow-handleStatus 头部样式
+.flow-view{
+    .active{
+        height: 18px;
+        width: 18px;
+        .weui-wepay-flow__state{
+            height: 0.34rem;
+            width: 0.34rem;
+            text-align: center;
+            line-height:0.34rem;
+            border-radius: 0.17rem;
+            font-size: 0.22rem;
+        }
+        .weui-wepay-flow__title-bottom{
+            top: 22px;
+            font-size: 0.24rem !important;
+            color: #333333;
+
+        }
+    }
+    .weui-wepay-flow__process{
+        background: #DEDEDE !important;
+        height: 1px;
+    }
+    .greater{
+        .weui-wepay-flow__state{
+            background: #A9D200 !important;
+            height: 0.26rem;
+            width: 0.26rem;
+            text-align: center;
+            line-height:0.26rem;
+            border-radius: 0.13rem;
+            font-size: 0.2rem;
+        }
+    }
+    .weui-wepay-flow__title-bottom{
+        font-size: 0.2rem !important;
+        color: #DEDEDE;
+    }
+}
+// 重置上台基础信息 dialog宽度
+.vux-x-dialog.dialog{
+    .weui-dialog{
+        width: 91%;
+        max-width: 100%;
+        overflow: initial;
+        
+        .dialog_content{
+          text-align: left !important;
+        }
+    }
+}
+// 修改后补上台组件
+.backup .vp-input-radio .vux-checker-item{
+    flex: none !important;
+    padding-right: 0.2rem;
+}
+
+// 修改选手机号页面Datetime组件样式修改
+.weui-cells.vux-no-group-title {
+  height: 100%;
+  width: 100%;
+}
+.sectionOne .weui-cell {
+  background: #F4F4F4;
+  padding: 0;
+  display: block;
+  height: 100%;
+  justify-content: space-between;
+  line-height: .9rem;
+  p {
+    font-size: .28rem;
+    color: #999999;
+  }
+
+}
+.sectionTwo .weui-cell div {
+  // width: 100%;
+}
+.sectionTwo,.sectionThree{
+  .weui-cell p {
+    font-size: .28rem;
+    color: #999999;
+    // width: 100%;
+  }
+}
+section .weui-cells:before {
+  border-top: none;
+}
+section .weui-cells:after {
+  border-bottom: none !important;
+}
+.selectDate .weui-cell {
+  padding-left: 0 !important;
+}
+section .weui-cell_access .weui-cell__ft:after {
+  display: none !important;
+}
+section .weui-cell__ft {
+  text-align: left !important;
+}
+.sectionTwo .selectDate .weui-cell ,.sectionThree .selectDate .weui-cell {
+  background: #fff;
+  height: .9rem;
+  padding-right: 0;
+}
+.sectionTwo .vux-no-group-title,.sectionThree .vux-no-group-title {
+  margin-top: 0;
+}
+.select-phone .vux-popup-picker-select {
+  text-align: left !important;
+  .vux-popup-picker-value {
+    font-size: .28rem;
+  }
+}
+.vux-popup-header-right {
+  color: #e52c79 !important;
+}
+.vux-popup-picker-placeholder {
+  font-size: .28rem;
+}
+.select-phone .vux-cell-value {
+  color: #666 !important;
+  font-size: .28rem;
+}
+.dp-item.dp-left.vux-datetime-cancel {
+  color: #828282 !important;
+}
+.select-phone .vp-input-message.vpInputMessage.InputMessageI .content::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: .2rem;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #C7C7C7;
+  color: #C7C7C7;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}

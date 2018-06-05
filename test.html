@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <title>中移香港</title>
+    <style>
+        .content1 {
+            height: 200px;
+            background: brown;
+        }
+        
+        .content2 {
+            height: 30px;
+            background: blanchedalmond;
+        }
+        
+        .content3 {
+            height: 200px;
+            background: blueviolet;
+        }
+        
+        .box {
+            height: 30px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="content1"></div>
+        <div class="content2"></div>
+        <div class="content3"></div>
+        <div class="box" id="box">
+            <input type="text" placeholder="12" @focus="onFocus">
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            var lastClickTime = 0;
+            var clickTimer;
+            setTimeout(function() {
+                document.body.addEventListener('touchend', function(event) {
+                    var nowTime = new Date().getTime();
+                    if (nowTime - lastClickTime < 400) { //雙擊
+                        location.reload();
+                    } else {
+                        lastClickTime = nowTime;
+                    }
+                });
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
